@@ -31,7 +31,7 @@
   ### This code quiz use local storage to store the previous scores of users.
 
   ## Contributors:
-  ### 
+  ### The questions of this quiz are from Data Flair. (https://data-flair.training/blogs/javascript-quiz/)
 
   ## Tests:
   ### N/A
