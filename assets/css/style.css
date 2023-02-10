@@ -1,0 +1,21 @@
+.test {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+}
+
+#info, #quiz, #userScore, #highScores {
+    width: 70%;
+}
+
+#quiz, #userScore, #highScores {
+    display: none;
+}
+
+.jumbotron {
+    background-color: antiquewhite;
+    /* background-color: cornflowerblue; */
+    border-radius: 30px;
+}
+
+

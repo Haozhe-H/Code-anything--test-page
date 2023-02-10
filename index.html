@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Timed Quiz</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+        
+        <div class="container mt-5 mb-3">
+            <div class="row gap-2">
+                <h2 class="col ms-2" id="viewHighScore">Score Board</h2>
+                <h2 class="col me-2 text-end">Time left: <span id="timer"> 0 </span></h2>
+            </div>
+        </div>
+
+        <!--card-->
+        <div class="container mt-3">
+            <div class="jumbotron jumbotron-fluid text-center">
+
+                <!-- info and start -->
+                <div class="container py-4" id="info">
+                    <h1 class="mb-4">Timed Quiz</h1>
+                    <p class="lead mb-4">Please answer the following questions within the time limit, click on "Score Board" to see previous scores</p>
+                    <button type="button" class="btn btn-outline-primary btn-lg" id="start">START</button>
+                </div>
+
+                <!-- quiz -->
+                <div class="container" id="quiz">
+                    <h2 class="mb-4" id="question"></h2>
+
+                    <div class="container d-grid gap-2" id="answer">
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary btn-lg mb-3 text-left" id="0"></button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary btn-lg mb-3 text-left" id="1"></button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary btn-lg mb-3 text-left" id="2"></button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-outline-primary btn-lg mb-3 text-left" id="3"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- user high score -->
+                <div class="container" id="userScore">
+                    <h1 class="mb-4">Quiz Finished</h1>
+                    <p class=" mb-4">Your Score is: <span id="score"></span></p>
+                    <p class=" mb-4">Enter Your Initial: <input type="text" id="initial"></p>
+                    <button type="button" class="btn btn-outline-primary btn-lg" id="submitInitial">Save</button>
+                </div>
+
+                <!-- high score -->
+                <div class="container" style="display: none;" id="highScore">
+                    <h2 class="mb-4 fw-bold">Score Board</h2>
+                    <h4 class="container mb-4" id="scores"></h4>
+                    <button type="button" class="btn btn-lg btn-outline-primary" id="back">Back</button>
+                </div>
+
+
+            </div>
+        </div>
+
+        <script src="./assets/js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+
+
+    </body>
+
+
+
+</html>
